@@ -1,0 +1,61 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 10px;
+
+}
+
+.body {
+    margin: 0;
+    background-color: aquamarine;
+}
+
+.topnav { 
+    border-radius: 50px;
+    box-shadow:inset black 20px;
+    overflow: hidden;
+    background-color: rgb(187, 136, 235);
+
+}
+
+.social-icons {
+    font-size: 40px;
+    margin: 10px;
+   color:aliceblue;
+
+}
+
+.showcase-top h1 {
+    color:aliceblue;
+
+}
+
+.showcase-top {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    color:aliceblue;
+    border-color: 2px solid black;
+   /* border-radius: 20px;*/
+}
+
+.showcase-center {
+    width: 50px;
+    height:30px;
+    text-align:left;
+    position:absolute;
+}
+
+.a hover {
+    color: aquamarine;
+}
+
+showcase-top .p {
+    color:blueviolet;
+}
+
+.showcase {
+    padding: 0px;
+}
