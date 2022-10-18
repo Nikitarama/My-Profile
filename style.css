@@ -9,6 +9,7 @@
 
 }
 #landing-top{
+    margin-top: 40px;
     width:100%;
     position:relative;
     position: absolute;
@@ -22,7 +23,7 @@
 .body {
     margin: 0px;
     background: url(./pics/suburbs.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 
 .topnav { 
@@ -35,10 +36,12 @@
     background-color: rgba(255, 228, 196, 0.916);
 
 }
+
 a { 
     font-size: 20px;
     font-family: 'Silkscreen', cursive;
 }
+
 .topnav a:hover {
     color: aliceblue;
     
@@ -49,13 +52,13 @@ a {
     font-style: 'Nunito Sans', sans-serif;
 }
 .gradient {
-    position: fixed;
-    top: 50%;
+    position: sticky;
+    top: 30%;
     left: 50%;
-    transform: translate( -50%,-50%);
+    transform: translate( -50%,-10%);
     display:flex;
-    width:25vw;
-    height:25vw;
+    width: 20vw;
+    height:20vw;
     background: linear-gradient(-45deg, #686FFD, #F1A73F, #686FFD, #F1A73F);
     background-size: 400% 400%;
     background-position: 0% 10%;
@@ -63,6 +66,7 @@ a {
     box-shadow: 0px 0px 20px black;
     cursor: pointer;
     border-radius: 50%;
+    
 }
 
 .gradient:hover {
@@ -89,7 +93,7 @@ h1 {
 
 .social-icons {
     border: 20px dotted bisque;
-    width:270px;
+    width:300px;
     border-radius: 10px;
     font-size: 40px;
     margin: 10px;
@@ -119,22 +123,69 @@ h1 {
 }
 
 .showcase-center  {
+    padding: 0px;
+    margin: 0px;
     z-index: -4;
     width:700px;
     height:700px;
 }
-i {
+
+.showcase-center p {
+    margin-top: 20% ;
     
 }
 
+i {
+
+   
+    
+}
+@keyframes i {
+
+}
 i:hover {
     color: aquamarine;
+  
+}
+.container div {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius:50px;
+    top:20px;
+}
+
+.animate {
+    animation-duration: 0.75s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function:cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode:backwards;
+}
+.animate.fade {
+    animation-name: animate-fade;
+    animation-timing-function: ease;
+}
+
+@keyframes animate-fade {
+    0% {opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }
 
 p {
+
     font-size: 25px;
     font-family: 'Silkscreen', cursive;
     color:aliceblue;
     border-bottom: 4px solid bisque;
+}
+.menu{
+        width: 25%;
+        float: left;
+        padding: 15px;
+        top: auto;
+      
 }
 
